@@ -1,0 +1,214 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+  background-color:white;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+#overskrift{
+    color:rgba(25, 114, 117, 0.863);
+    font-family: 'Menlo', monospace;
+    font-size: 60px;
+}
+
+p{
+    color:#666666;
+    font-family: 'Menlo', monospace;
+    font-size: 25px;
+    font-weight: lighter;
+}
+    
+a:link{
+    text-decoration: none;
+    font-size:22px;
+    color:#197275dc;
+}
+
+a:active {
+    color: rgba(25, 168, 173, 0.863);  
+  }
+
+a:visited {
+    color: rgba(25, 168, 173, 0.863);  
+  }
+
+  a:hover {
+    color: #05b497dc; 
+  }
+  
+.main{
+  top:-20%;
+  position: relative;
+  padding-top:30%;
+  margin:30px;
+    
+}
+
+
+
+
+.ikoner{
+  
+  padding-top:30px;
+  padding-right:50px;
+  width: 50px;
+  height: 50px;
+}
+
+  
+.ikoner:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.info2{
+  display:none;
+}
+
+img {
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+#mail{
+  text-decoration: none;
+  color:666666;
+  font-size:20px;
+}
+
+  @media (min-width: 0px) and (max-width: 600px) {
+
+    .main{
+      top:0%;
+
+    }
+
+
+    .ikoner{
+      width:50px;
+      height:50px;
+      margin-top:20px;
+      padding:20px;
+
+      -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+         -moz-animation: fadein 2s; /* Firefox < 16 */
+          -ms-animation: fadein 2s; /* Internet Explorer */
+           -o-animation: fadein 2s; /* Opera < 12.1 */
+              animation: fadein 2s;
+      
+    }
+
+
+    .info{
+      display:none;
+    }
+
+    .info2{
+      padding-top:20px;
+      display:block;
+      font-size:20px;
+      
+      -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+         -moz-animation: fadein 2s; /* Firefox < 16 */
+          -ms-animation: fadein 2s; /* Internet Explorer */
+           -o-animation: fadein 2s; /* Opera < 12.1 */
+              animation: fadein 2s;
+    }
+
+    /* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+  
+    #overskrift{
+      font-size:45px;
+    }
+
+    .main{
+  
+      padding-top:30%;
+      margin:30px;
+      text-align: center;
+        
+    }
+
+  }
+
+  
+
+@media (min-width:700px){
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  #overskrift:after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    background: #197275dc;
+    opacity: 100%;
+    display: inline-block;
+    animation: blink 1s linear infinite alternate;
+  }
+}
